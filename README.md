@@ -6,7 +6,7 @@ Usa javascritp come linguaggio di programmazione.
 E' pieno di moduli
 E' veloce
 
-
+BACKEND
 Express.js - Web framework per Node.js. Con Nodei compiti più comuni diventano fastidiosi da gestire, con Express vengono semplificati notevolmente.
 
 Express permette specificamente la gestione delle rotte o percorsi (i diversi URL accettati dall’applicazione).
@@ -15,6 +15,8 @@ Express fornisce una vasta scelta tra i template engine (come EJS). Questi ci pe
 
 Express si basa sul concetto di middleware, che sono dei mini-strati dell’app che offrono funzionalità specifiche (come sessioni, compressione pagina gzip, gestione cookie, ecc.).
 
+FRONT END
+React.js Una libreria JavaScript per creare interfacce utente
 
 
 
