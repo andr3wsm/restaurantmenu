@@ -22,4 +22,5 @@ React.js Una libreria JavaScript per creare interfacce utente
 
 
 Software:
-Insomnia
+Insomnia<br />
+TortoiseGit<br />
