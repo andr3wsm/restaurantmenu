@@ -7,4 +7,4 @@ E' pieno di moduli
 E' veloce
 
 
-Web framework per Node.js ovvero Express.js
+Express.js - Web framework per Node.js
