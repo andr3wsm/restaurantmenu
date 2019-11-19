@@ -1,16 +1,14 @@
 {
-  "name": "primo-progetto",
+  "name": "be",
   "version": "1.0.0",
-  "description": "no-description",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "express": "^4.17.1",
-    "yarn": "^1.19.1"
-  },
-  "devDependencies": {}
+    "express": "^4.17.1"
+  }
 }
