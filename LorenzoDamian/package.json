@@ -1,0 +1,17 @@
+{
+  "name": "LorenzoDamian",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lorenzo Damian",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.0"
+  },
+  "scripts": { 
+    "start": "nodemon server.js --exec babel-node --presets env", 
+    "release": "npm run clean && npm run build && npm run serve", 
+    "clean": "rm -rf dist && mkdir dist", "build": "babel . -s -D -d dist --presets env --ignore node_modules", 
+    "serve": "node dist/server.js" 
+  }
+}
