@@ -1,6 +1,8 @@
-import notebook from '../controllers/notebookController';
+//import notebook from '../controllers/notebookController';
 
-export default (app) => {
+const notebook = require("../controllers/notebookController")
+
+return (app) => {
     app.route('/notes')
         .get(notebook.getAllNotes)
         .post(notebook.createNote);
