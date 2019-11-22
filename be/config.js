@@ -10,11 +10,11 @@ config.logLevel = process.env.LOGLEVEL || 'info';
 
 /**
  * mongodb ENV=devel
- */
+ 
 config.mongodb = {
 	team: "mongodb://192.168.10.80:27017/team"
 }
-
+*/
 config.JWT_KEY = "my key"
 
 
