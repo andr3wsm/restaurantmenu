@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-// import { MyTopBar } from './components/myTopBar'
+import { MyTopBar } from './components/myTopBar'
 import { Button } from 'antd';
 import './App.css';
 import axios from 'axios';
@@ -45,7 +45,7 @@ class AboutApp extends Component {
     axios.get('/about')
     .then((res) => {
       this.setState({
-        pippo: res.data,
+        pippo: res.data.pippo,
       })
     })
   }
@@ -64,11 +64,8 @@ export default function myApp() {
     <Router>
       <div>
         <nav>
-          <ul>
-            <li> <Link to="/">Home page</Link> </li>
-            <li> <Link to="/about">About page</Link> </li>
-            <li> <Link to="/json">Json</Link> </li>
-          </ul>
+          <MyTopBar>
+          </MyTopBar>
         </nav>
         <Switch>
           <Route path="/"><App /></Route>
