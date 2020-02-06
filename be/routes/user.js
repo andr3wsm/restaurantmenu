@@ -16,10 +16,11 @@ router.get('/about', function(req, res) {
 router.post("/insertanimal", function(req, res) {
   console.log(req.body.Nome)
   const insertAnimal = new animalsModel({
-    _id: new mongoose.Types.ObjectID()
+    // _id: new mongoose.Types.ObjectID(),
     Nome: req.body.Nome,
     Tipo: req.body.Tipo,
   })
+  
   insertAnimal.save()
   .then(result => console.log(result))
   .catch(err => console.log(err))

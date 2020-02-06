@@ -7,4 +7,4 @@ const animalSchema = new mongoose.Schema({
     Tipo: String
 });
 
-module.export = mongoose.model("Animal", animalSchema);
+module.exports = mongoose.model("Animal", animalSchema);
