@@ -5,7 +5,7 @@ var animalsModel = require("../src/models/animals");
 
 // define the home page route
 router.get('/', function(req, res) {
-  res.send('Birds home page');
+  res.json({"pippo": "poppo"})
 });
 
 // define the about route

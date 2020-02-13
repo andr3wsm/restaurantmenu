@@ -13,6 +13,10 @@ export class MyTopBar extends Component {
                     <Icon type="appstore"></Icon>
                     <a href="/about">About Page</a>
                 </Menu.Item>
+                <Menu.Item key="json">
+                    <Icon type="appstore"></Icon>
+                    <a href="/json">Json Page</a>
+                </Menu.Item>
                 </Menu>
             </div>
         )

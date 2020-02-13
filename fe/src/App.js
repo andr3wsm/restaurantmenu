@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { MyTopBar } from './components/myTopBar'
 import { Button } from 'antd';
 import './App.css';
@@ -15,6 +15,7 @@ class App extends Component {
       pippo: null,
     };
   }
+
   async componentDidMount() {
     axios.get('/json')
     .then((res) => {
@@ -25,7 +26,7 @@ class App extends Component {
   }
   render() {
     const myMessage = this.state.pippo;
-    return (
+        return (
       <div className="App">
         <Button> {myMessage} hnhh </Button>
       </div>
@@ -58,6 +59,21 @@ class AboutApp extends Component {
     );
   }
 }
+
+
+
+/*
+axios.post("/user", {
+  firstName: "Febo",
+  lastName: "Damian"
+})
+.then(function (response) {
+  console.log(response);
+})
+.error(function (error) {
+  console.log(error);
+});
+*/
 
 export default function myApp() {
   return(
